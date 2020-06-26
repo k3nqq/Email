@@ -1,0 +1,71 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Кому:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTo"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        tools:ignore = "Autofill, LabelFor"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Тема"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtSubject"
+        android:hint="Тема"
+        android:inputType="textEmailSubject"
+        tools:ignore = "Autofill,LabelFor"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сообщение"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="start|top"
+        android:hint="Сообщение"
+        android:lines="20"
+        tools:ignore="Autofill,LabelFor, TextFields" />
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправить" />
+    <ImageView
+        android:id="@+id/idImageViewPhoto"
+        android:layout_width="156dp"
+        android:layout_height="152dp"
+        android:contentDescription="No photo"
+        android:src="@mipmap/ic_launcher"
+        />
+    <Button
+        android:id="@+id/idBtnGetPhoto"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:text="фото из галереи" />
+    <Button
+        android:id="@+id/btnTakePhoto"
+        android:layout_width="164dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:text="сделать фото" />
+</LinearLayout>
